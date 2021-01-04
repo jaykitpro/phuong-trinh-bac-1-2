@@ -6,7 +6,10 @@ BEGIN
 
     a := &a;
     b := &b;
-
+    
+    dbms_output.put_line('Nhap so a:'||a);
+    dbms_output.put_line('Nhap so b:'||b);
+    
     if a = 0 then
         if b = 0 then
             dbms_output.put_line('Phuong trinh vo so nghiem');
@@ -34,6 +37,10 @@ BEGIN
     a := &a;
     b := &b;
     c := &c;
+    
+    dbms_output.put_line('Nhap so a:'||a);
+    dbms_output.put_line('Nhap so b:'||b);
+    dbms_output.put_line('Nhap so c:'||c);                                                              
     
     if a = 0 then
         if b = 0 then
