@@ -60,13 +60,11 @@ BEGIN
         dbms_output.put_line('Phuong trinh co 2 nghiem la: ');
         dbms_output.put_line('x1 = ' || round(x1, 2));
         dbms_output.put_line('x2 = ' || round(x2, 2));
+    elsif delta = 0 then
+        x1 := (-b / (2 * a));
+        dbms_output.put_line('Phuong trinh co nghiem kep: x1 = x2 = ' || round(x1, 2));
     else
-        if delta = 0 then
-            x1 := (-b / (2 * a));
-            dbms_output.put_line('Phuong trinh co nghiem kep: x1 = x2 = ' || round(x1, 2));
-        else
-            dbms_output.put_line('Phuong trinh vo nghiem');
-        end if;
+        dbms_output.put_line('Phuong trinh vo nghiem');
     end if;
 END;
 /
